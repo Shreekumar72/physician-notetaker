@@ -6,3 +6,4 @@ torch
 keybert
 nltk
 sentence-transformers
+streamlit
