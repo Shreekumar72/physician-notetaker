@@ -21,5 +21,5 @@ COPY --chown=user . /app
 # Expose the correct port
 EXPOSE 7860
 
-# Run the FastAPI app with uvicorn
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "7860"]
+# Run the FastAPI app with explicit host, port, and root-path
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "7860", "--root-path", "/"]

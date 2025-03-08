@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 
-app = FastAPI()
+# Force FastAPI to use the root path expected by Hugging Face Spaces
+app = FastAPI(root_path="/")
 
 @app.get("/")
 def root():
