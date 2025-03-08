@@ -3,5 +3,9 @@ from fastapi import FastAPI
 app = FastAPI()
 
 @app.get("/")
-def greet_json():
-    return {"Hello": "World!"}
+def root():
+    return {"message": "Physician Notetaker API is Running 🚀"}
+
+@app.get("/health")
+def health_check():
+    return {"status": "OK"}
