@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+transformers
+spacy
+torch
+keybert
+nltk
+sentence-transformers
